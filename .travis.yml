@@ -1,8 +1,13 @@
 sudo: required
 dist: trusty
+env:
+  global:
+    - BOOTSTRAP_LATEX="1"  
 before_install:
-  - sh installR.sh
+  - chmod 755 ./installR.sh
+  - ./installR.sh bootstrap
 install:
+  - ./travis-tool.sh install_deps
   - tlmgr install collection-basic
   - tlmgr install collection-bibtexextra
   - tlmgr install collection-binextra
