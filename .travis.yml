@@ -1,7 +1,5 @@
 sudo: required
 dist: trusty
-language: r
-cache: packages
 before_install:
   - sudo sh installR.sh
 install:
