@@ -3,12 +3,11 @@ dist: trusty
 language: r
 cache: packages
 before_install:
+  - sudo sh installR.sh
+install:
   - tlmgr install collection-basic
   - tlmgr install collection-bibtexextra
   - tlmgr install collection-binextra
-  - tlmgr install collection-fontutils
-  - tlmgr install collection-formatsextra
-  - tlmgr install collection-humanities
   - tlmgr install collection-langenglish
   - tlmgr install collection-langgerman
   - tlmgr install collection-latex
@@ -19,7 +18,6 @@ before_install:
   - tlmgr install collection-pictures
   - tlmgr install collection-plaingeneric
   - tlmgr install collection-pstricks
-install:
 script:
 - mkdir _build
 - arara Main.tex -v
