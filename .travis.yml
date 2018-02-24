@@ -1,3 +1,13 @@
+sudo: required
+dist: trusty
+language: r
+cache: packages
+before_install:
+  - tlmgr install index
+install:
+script:
+- mkdir _build
+- arara Main.tex -v
 deploy:
   provider: releases
   api_key:
