@@ -6,20 +6,20 @@ before_install:
   - sudo apt-get install -y --no-install-recommends texlive-base texlive-latex-base xzdec
 install:
   - mkdir ~/texmf
-  - tlmgr init-usertree
-  - tlmgr install collection-basic
-  - tlmgr install collection-bibtexextra
-  - tlmgr install collection-binextra
-  - tlmgr install collection-langenglish
-  - tlmgr install collection-langgerman
-  - tlmgr install collection-latex
-  - tlmgr install collection-latexextra
-  - tlmgr install collection-latexrecommended
-  - tlmgr install collection-luatex
-  - tlmgr install collection-mathscience
-  - tlmgr install collection-pictures
-  - tlmgr install collection-plaingeneric
-  - tlmgr install collection-pstricks
+  - sudo tlmgr init-usertree
+  - sudo tlmgr install collection-basic
+  - sudo tlmgr install collection-bibtexextra
+  - sudo tlmgr install collection-binextra
+  - sudo tlmgr install collection-langenglish
+  - sudo tlmgr install collection-langgerman
+  - sudo tlmgr install collection-latex
+  - sudo tlmgr install collection-latexextra
+  - sudo tlmgr install collection-latexrecommended
+  - sudo tlmgr install collection-luatex
+  - sudo tlmgr install collection-mathscience
+  - sudo tlmgr install collection-pictures
+  - sudo tlmgr install collection-plaingeneric
+  - sudo tlmgr install collection-pstricks
 script:
 - mkdir _build
 - arara Main.tex -v
