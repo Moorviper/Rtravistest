@@ -2,7 +2,6 @@ sudo: required
 dist: trusty
 before_install:
   - sudo apt-get install --reinstall texlive-base
-  - tlmgr init-usertree
 install:
   - sudo tlmgr install collection-basic
   - sudo tlmgr install collection-bibtexextra
