@@ -223,6 +223,7 @@ InstallGithub() {
 }
 
 InstallDeps() {
+  echo "Installing nothing"
   #  EnsureDevtools
   #  Rscript -e 'library(devtools); library(methods); options(repos=c(CRAN="'"${CRAN}"'")); install_deps(dependencies = TRUE)'
 }
