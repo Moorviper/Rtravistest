@@ -2,7 +2,7 @@ sudo: required
 dist: trusty
 before_install:
   - wget https://github.com/scottkosty/install-tl-ubuntu/raw/master/install-tl-ubuntu && chmod +x ./install-tl-ubuntu
-  - sudo ./install-tl-ubuntu
+  - sudo ./install-tl-ubuntu --allow-small
 install:
   - sudo tlmgr install collection-basic
   - sudo tlmgr install collection-bibtexextra
