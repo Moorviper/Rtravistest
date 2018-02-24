@@ -3,7 +3,7 @@ dist: trusty
 before_install:
   - sudo apt-get install --reinstall texlive-base
 install:
-  - sudo tlmgr install collection-basic
+  - tlmgr install collection-basic
   - sudo tlmgr install collection-bibtexextra
   - sudo tlmgr install collection-binextra
   - sudo tlmgr install collection-langenglish
