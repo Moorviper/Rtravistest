@@ -4,7 +4,7 @@
 
 set -e
 # Comment out this line for quieter output:
-set -x
+#set -x
 
 CRAN=${CRAN:-"http://cran.rstudio.com"}
 BIOC=${BIOC:-"http://bioconductor.org/biocLite.R"}
