@@ -1,9 +1,10 @@
 sudo: required
 dist: trusty
 before_install:
-  - sudo apt-get install --reinstall texlive-base
+  - wget https://github.com/scottkosty/install-tl-ubuntu/raw/master/install-tl-ubuntu && chmod +x ./install-tl-ubuntu
+  - sudo ./install-tl-ubuntu
 install:
-  - sudo /opt/texbin/tlmgr install collection-basic
+  - sudo tlmgr install collection-basic
   - sudo tlmgr install collection-bibtexextra
   - sudo tlmgr install collection-binextra
   - sudo tlmgr install collection-langenglish
