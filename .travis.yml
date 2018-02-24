@@ -1,0 +1,7 @@
+deploy:
+  provider: releases
+  api_key:
+    secure: HdPyAv9WXpoaLwV/WffdrTeZ1aMY2x1KeXOeiXscWf7sSHPMLgHFw8twtda0NLR3vaqEDAM2zKUG55O8AQkey3di+DKVxRwX3/zJaCfljqypr9bEpwDPUbMGuAYu7x3Bfi0gh8t7x6Ss/rktcrJUp3fmHt1PdhdSPvzjN0nR+gbP4URvA0/Kk4/uYrlmTVfb6uEMtw4HVK6yT7WvyRpyTIaAZTZjXFeGCzSRY858cG+B+NYa8Kah8Y5K3pRbTmegt4IGrKRerp713lNo/43/XW6UqRa+O51wgidS7DV6EY2IfQTGs4bk8CayerNpfPVOFLbDKCytBxQ0p3AAuXodQun9x3fJt+RGm6mPoWL9cJUibE5/tFMGmiGWx+8l+7j5AgZ5exz6XQ7IwahzFX+ZPW8UNc2RMi8mfgKTX4j1p9rf+S2wPsZTzTkTg+B6gK+6aT5earu2jBwjHZ86t8ktPOvhr40O/FQxl6wn4sQOF6sSy3GTXrvsxHL9NgtmeKkWDBu4HK45z6GPCV5BW5oRoOd/Q7kaiz8qcrqsCfVwcxhW793f8+G00+aF8R7kmt/bOl+ziWZEWMzAoayUxWht1UUUuoGmTB0IcEhdSxoAH8GRybwdFsGAAucAWCgz+aBIwqxNIhwce5cIZyoO2ZmjxYXg6K+RatuhI0RRfOH3Iw4=
+  file: Main.pdf
+  on:
+    repo: Moorviper/Rtravistest
