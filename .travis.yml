@@ -1,12 +1,9 @@
 sudo: required
 dist: trusty
 before_install:
-  - sudo add-apt-repository ppa:jonathonf/texlive -y
-  - sudo apt-get update -q
-  - sudo apt-get install -y --no-install-recommends texlive-base texlive-latex-base xzdec
+  - sudo apt-get install --reinstall texlive-base
+  - tlmgr init-usertree
 install:
-  - mkdir ~/texmf
-  - sudo tlmgr init-usertree
   - sudo tlmgr install collection-basic
   - sudo tlmgr install collection-bibtexextra
   - sudo tlmgr install collection-binextra
