@@ -3,7 +3,22 @@ dist: trusty
 language: r
 cache: packages
 before_install:
-  - tlmgr install index
+  - tlmgr install collection-basic
+  - tlmgr install collection-bibtexextra
+  - tlmgr install collection-binextra
+  - tlmgr install collection-fontutils
+  - tlmgr install collection-formatsextra
+  - tlmgr install collection-humanities
+  - tlmgr install collection-langenglish
+  - tlmgr install collection-langgerman
+  - tlmgr install collection-latex
+  - tlmgr install collection-latexextra
+  - tlmgr install collection-latexrecommended
+  - tlmgr install collection-luatex
+  - tlmgr install collection-mathscience
+  - tlmgr install collection-pictures
+  - tlmgr install collection-plaingeneric
+  - tlmgr install collection-pstricks
 install:
 script:
 - mkdir _build
