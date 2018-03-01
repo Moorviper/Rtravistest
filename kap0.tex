@@ -1,0 +1,291 @@
+
+\section{Aufleiten}
+
+\begin{align*}
+f(x) &= 3x -4 \\
+     &= 3x^1 -4x^0 \\
+F(x) &= \frac{3}{2}x^2 - \frac{4}{1} x^1 +k
+\end{align*}
+
+\begin{align*}
+  f(x) &= 5 \sqrt{x} = 5x^{0,5} \\
+  F(x) &= \frac{1}{1,5}* 5*x^{1,5}  = \frac{2}{3} * 5 * x^{1,5} \\
+  F(x) &= \frac{10}{3} x^{1,5} + k
+\end{align*}
+
+\begin{align*}
+  f(x) &=  \frac{2}{3x^2} = \frac{2}{3}x^{-2} \\
+  F(x) &= \frac{2}{3} * \frac{1}{-1} x^{-2+1} \\
+  F(x) &= - \frac{2}{3} x^{-1} + k \\
+  \\
+  f(x) &= \frac{1}{x} \\
+  F(x) &= ln |x| +k
+\end{align*}
+
+
+sin -cos -sin  cos sin .... \\
+
+\subsection{Kettenregel}
+Ableiten: mal die innere Ableitung\\
+Aufleiten: durch die innere Ableitung\\
+
+
+\begin{align*}
+  f(x) &=  (2x + 3)^2\\
+  F(x) &= \frac{1}{3} (2x +3)^3 * \frac{1}{2} + k \\
+  F(x) &= \frac{1}{6} (2x +3)^3 +k
+\end{align*}
+Innere ableitung von 2x = 2 daher $* \frac{1}{2}$
+Innere Funktion muss linear sein \\
+
+\begin{align*}
+  f(x) &= 2 cos(3x)\\
+  F(x) &= 2 sin(3x) * \frac{1}{3} +k \\
+  F(x) &= \frac{2}{3} sin(3x) + k
+\end{align*}
+
+\subsection{Ableiten}
+1. Ableitung = Steigung \\
+Extrempunkt Ableitung = 0 \\
+\begin{align*}
+  f(x) &= x^3 - 3x^2 \\
+  f`(x) &= 3x^2 - 6x = 0 \\
+  f`(x) &= x (3x - 6) = 0 \\
+  x1 &= 0 \\
+  x2 &= (3x - 6) = 2\\
+\end{align*}
+
+\subsection{Hoch-/Tiefpunkt \Rightarrow 2. Ableitung}
+\begin{align*}
+  f``(x) > 0 &\rightarrow \text{Tiefpunkt} \\
+  f``(x) < 0 &\rightarrow \text{Hochpunkt}
+\end{align*}
+
+\begin{align*}
+  f`(x) &= 3x^2 - 6x\\
+  f``(x) &= 6x - 6 \\
+  x1 &= 0 \rightarrow  f``(0) = -6 \ \text{<0 Hochpunkt} \\
+  x2 &= 2 \rightarrow  f``(2) = 6 \ \text{>0 Tiefpunkt}
+\end{align*}
+
+\subsection{Wendepunkte 2. Ableitung = 0 , 3. Ableitung $\neq{}$ 0}
+Links nach rechts $f```(x) < 0$ \\
+Rechts nach links $f```(x) > 0$ \\
+Sattelpunkt
+\begin{align*}
+  f`(x) &= 0 \\
+  f``(x) &= 0 \\
+  f```(x) & \neq{} 0 \\
+\end{align*}
+
+Ungrade Exponenten größer 1 immer 3 Schnittpunkte.
+
+\section{Integrale}
+\begin{align*}
+\int_0^3 f(x) &dx \\
+\int_1^3 \frac{1}{2}x^2 &dx = F(3) - F(1) = [F(x)]_1^3 \\
+F(x) &= \frac{1}{6} x^3 +k \\
+F(3) &= \frac{1}{6} 3^3 +k  = \frac{27}{6} \\
+F(1) &= \frac{1}{6} 1^3 +k  = \frac{1}{6} \\
+&= \frac{26}{6} = \frac{13}{3}
+\end{align*}
+
+Bei 2 Funktionen nie über schnittpunkt \\
+
+\section{Exponentialfunktion und Logarithmus}
+
+\begin{align*}
+\lim\limits_{n \to \infty}(1 + \frac{1}{n})^2 = 2,71828 \\
+e &= 2,7 \\
+f(x) &= 3^x \\
+f(x) &= e^x  \\
+f(x) &= k^x \\
+f(0) &= k^0 = 1 \ \text{immer} \\
+\\
+f(x) &= x^2 \\
+f(-1) &= 2^{-1} = \frac{1}{2} = 0,5 \\
+f(-5) &= \frac{1}{32} = 0,0312
+\end{align*}
+
+\subsection{Regeln}
+\begin{align*}
+  x^2 + x^2 &= x^4 \\
+  3^a * 3^b &= 3^{a+b} \\
+  \frac{3^a}{3^b} & = 3^{a-b}\\
+  3^{a^b} &= 3^{a*b} \\
+  3^a + 3^b &= \text{Geht nicht}
+\end{align*}
+
+\subsection{Logarithmus}
+\begin{align*}
+  log_10 (1000) &= 3 \\
+  10^3 &= 1000 \\
+  log_2 (4) &= 2 \\
+  2^2 &= 4 \\
+  log_10 (10^x) &= x \\
+  ln(e^x) &= x \\
+  e^{ln(x)} &= x \\
+  \\
+  ln(1) &= 0 \\
+  ln(e) &= 1 \\
+  \\
+  f(x) &= e^x \\
+  f(x) &= ln(x)%\text{Umkehrfunktion}
+\end{align*}
+
+\section{Lösen von quadratischen Gleichungen}
+
+Allgemeine Form:
+\begin{align*}
+  ax^2 + bx + c &= 0\\
+\end{align*}
+Normalform:
+\begin{align*}
+  x^2 + px + q &= 0\\
+\end{align*}
+\subsection{Lösen von quadratischen Gleichungen}
+\subsubsection{PQ Formel}
+\begin{align*}
+  x_{1,2} &= -\frac{p}{2} +/- \sqrt{(\frac{p}{2})^2 - q}
+\end{align*}
+\subsubsection{Mitternachtsformel}
+\begin{align*}
+  ax^2 + bx + c &= 0\\
+  x_{1,2} &= \frac{-b \pm \sqrt{b^2 - 4ac}}
+                  {2a}
+\end{align*}
+
+
+\section{Vector}
+
+Punkt A=(0/0/0)\\
+Punkt B=(4/5/5)\\
+
+$x_1 ,x_2 ,x_3$ yxz\\
+vector\\
+\begin{align*}
+  \frac{\rightarrow}{b} = \left(
+   \begin{array}{c}
+     4 \\
+     5 \\
+     5
+   \end{array}
+\right)
+= \frac{\rightarrow}{AB}
+\end{align*}
+Länge vecotr = betrag\\
+\begin{align*}
+  \frac{\rightarrow}{b} = \left(
+   \begin{array}{c}
+     1 \\
+     2 \\
+     3
+   \end{array}
+\right)
+\frac{\rightarrow}{|b|} = \sqrt{1^2 +2^2 + 3^3}
+\end{align*}
+
+wenn:\\
+\begin{align*}
+  \frac{\rightarrow}{a} * \frac{\rightarrow}{b} = 0 \ \text{dann senkrecht}
+\end{align*}
+
+Winkel zwischen 2 vectoren
+
+\begin{align*}
+  cos(alpha) = \frac{\frac{\rightarrow}{a} * \frac{\rightarrow}{b} }{|\frac{\rightarrow}{a}| * |\frac{\rightarrow}{b}|}
+\end{align*}
+
+Skalarprodukt von senkrechten Vectoren = 0 \\
+
+\begin{align*}
+  \frac{\rightarrow}{a} = \left(
+   \begin{array}{c}
+     1 \\
+     -3 \\
+     2
+   \end{array}
+\right)
+\end{align*}
+\begin{align*}
+  \frac{\rightarrow}{b} = \left(
+   \begin{array}{c}
+     -2 \\
+     6 \\
+     -4
+   \end{array}
+\right)
+\end{align*}
+\begin{align*}
+  |\frac{\rightarrow}{a}| = \sqrt{1^2 + (-3)^2 +2^2} = \sqrt{14} \\
+  |\frac{\rightarrow}{b}| = \sqrt{(-2)^2 + 6^2 +(-4)^2} = \sqrt{56}
+\end{align*}
+\begin{align*}
+  \frac{\rightarrow}{a} * \frac{\rightarrow}{b} &= \left(
+   \begin{array}{c}
+     1 \\
+     -3 \\
+     2
+   \end{array}
+\right) * \left(
+ \begin{array}{c}
+   -2 \\
+   6 \\
+   -4
+ \end{array}
+\right) \\
+&= 1*(-2)+(-3)*6+2*(-4) = -28
+\end{align*}
+3. Einsetzen
+
+\begin{align*}
+  cos(alpha) &= \frac{-28}{\sqrt{14} * \sqrt{56}}\\
+  &= -1 \\
+  alpha &= arccos(-1) = 180^0
+\end{align*}
+
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{./pictures/1.png}
+\end{center}
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{./pictures/2.png}
+\end{center}
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{./pictures/3.png}
+\end{center}
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{./pictures/4.png}
+\end{center}
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{./pictures/1.jpg}
+\end{center}
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{./pictures/2.jpg}
+\end{center}
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{./pictures/3.jpg}
+\end{center}
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{./pictures/4.jpg}
+\end{center}
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{./pictures/5.jpg}
+\end{center}
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{./pictures/6.jpg}
+\end{center}
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{./pictures/7.jpg}
+\end{center}
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{./pictures/8.jpg}
+\end{center}
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{./pictures/9.jpg}
+\end{center}
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{./pictures/10.jpg}
+\end{center}
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{./pictures/11.jpg}
+\end{center}
