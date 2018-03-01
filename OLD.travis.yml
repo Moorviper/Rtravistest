@@ -1,12 +1,25 @@
 sudo: required
 dist: trusty
-services:
-  - docker
 before_install:
-  - docker pull moorviper/dockerlatex
+  - wget https://github.com/scottkosty/install-tl-ubuntu/raw/master/install-tl-ubuntu && chmod +x ./install-tl-ubuntu
+  - sudo ./install-tl-ubuntu --allow-small
 install:
+  - sudo tlmgr install collection-basic
+  - sudo tlmgr install collection-bibtexextra
+  - sudo tlmgr install collection-binextra
+  - sudo tlmgr install collection-langenglish
+  - sudo tlmgr install collection-langgerman
+  - sudo tlmgr install collection-latex
+  - sudo tlmgr install collection-latexextra
+  - sudo tlmgr install collection-latexrecommended
+  - sudo tlmgr install collection-luatex
+  - sudo tlmgr install collection-mathscience
+  - sudo tlmgr install collection-pictures
+  - sudo tlmgr install collection-plaingeneric
+  - sudo tlmgr install collection-pstricks
 script:
-  - ./latexdockercmd.sh arara Main.tex -v
+- mkdir _build
+- arara Main.tex -v
 deploy:
   provider: releases
   api_key:
