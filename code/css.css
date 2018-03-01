@@ -1,0 +1,16 @@
+div#header, header
+    {
+    /* Put border on bottom. Separates it from TOC or body that comes after it. */
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
+    }
+
+.title /* Pandoc title header (h1.title) */
+    {
+    text-align: center;
+    }
+
+.author, .date /* Pandoc author(s) and date headers (h2.author and h3.date) */
+    {
+    text-align: center;
+    }
